@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Appointment System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏥 Hospital Appointment System</h1>
+
+<div class="dashboard">
+    <div class="card">
+        <h3>Total Doctors</h3>
+        <span id="doctorCount">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Total Patients</h3>
+        <span id="patientCount">0</span>
+    </div>
+
+    <div class="card">
+        <h3>Appointments</h3>
+        <span id="appointmentCount">0</span>
+    </div>
+</div>
+
+<section>
+<h2>Add Doctor</h2>
+
+<input id="doctorName" placeholder="Doctor Name">
+<input id="doctorSpecialization" placeholder="Specialization">
+<button onclick="addDoctor()">Add Doctor</button>
+
+<div id="doctorList"></div>
+</section>
+
+<section>
+<h2>Add Patient</h2>
+
+<input id="patientName" placeholder="Patient Name">
+<input id="patientAge" placeholder="Age">
+<button onclick="addPatient()">Add Patient</button>
+
+<div id="patientList"></div>
+</section>
+
+<section>
+<h2>Book Appointment</h2>
+
+<select id="doctorSelect"></select>
+
+<select id="patientSelect"></select>
+
+<input type="date" id="appointmentDate">
+
+<button onclick="bookAppointment()">
+Book Appointment
+</button>
+
+<div id="appointmentList"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
